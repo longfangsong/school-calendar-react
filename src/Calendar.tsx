@@ -65,3 +65,5 @@ export default function Calendar(props: {
         </div>
     );
 }
+
+export {Dot} from "./Day/Day";
