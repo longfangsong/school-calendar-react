@@ -1,0 +1,54 @@
+.day-container {
+    display: flex;
+    flex: 0 0 14.27%;
+}
+
+.day {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.day.selected {
+    width: 100%;
+    padding-bottom: 2px;
+    padding-top: 0;
+    border: 1px solid #acacac;
+}
+
+.day:hover {
+    background: #515151;
+}
+
+.day .day-number {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.day .event {
+    display: flex;
+    height: 12px;
+}
+
+.day .event-text {
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+}
+
+.day .dot {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+    min-height: 5px;
+    border-radius: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
