@@ -23,8 +23,12 @@
     border: 1px solid #acacac;
 }
 
-.day:hover {
+.theme--dark .day:hover {
     background: #515151;
+}
+
+.theme--light .day:hover {
+    background: #e0e0e0;
 }
 
 .day .day-number {

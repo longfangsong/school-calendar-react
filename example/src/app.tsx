@@ -17,6 +17,7 @@ const App = () => {
         <Calendar date={date}
                   events={getEvents}
                   onSelect={setDate}
+                  className={"theme--dark"}
                   style={{borderRadius: 4}}
         />
     );

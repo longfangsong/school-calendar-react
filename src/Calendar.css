@@ -1,12 +1,20 @@
 .calendar {
     max-width: 420px;
     margin: 0 auto;
-    background: #424242;
-    color: white;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 21px;
     user-select: none;
+}
+
+.theme--light.calendar, .theme--light .calendar {
+    background: white;
+    color: rgba(0, 0, 0, .87);
+}
+
+.theme--dark.calendar, .theme--dark .calendar {
+    background: #424242;
+    color: white;
 }
 
 .calendar-header {
@@ -29,14 +37,22 @@
     border-radius: 20px;
     font-size: 24px;
 
-    background: #212121;
-    fill: white;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
     border: none;
 
     transition: background-color .3s linear, border .3s linear;
     position: relative;
+}
+
+.theme--light .calendar-header button {
+    background: white;
+    fill: rgba(0, 0, 0, .87);
+}
+
+.theme--dark .calendar-header button {
+    background: #212121;
+    fill: white;
 }
 
 .calendar-header button:after {
@@ -48,12 +64,19 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    background-image: radial-gradient(circle, #ffffff 10%, rgba(0, 0, 0, 0) 10.01%);
     background-repeat: no-repeat;
     background-position: 50%;
     transform: scale(10);
     opacity: 0;
     transition: transform .5s, opacity 1s;
+}
+
+.theme--dark .calendar-header button:after {
+    background-image: radial-gradient(circle, #ffffff 10%, rgba(0, 0, 0, 0) 10.01%);
+}
+
+.theme--light .calendar-header button:after {
+    background-image: radial-gradient(circle, #000000 10%, rgba(255, 255, 255, 0) 10.01%);
 }
 
 .calendar-header button:active:after {

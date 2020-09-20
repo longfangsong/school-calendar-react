@@ -2,15 +2,15 @@ import React, {CSSProperties, useEffect, useState} from "react";
 import "./Calendar.css";
 import {
     addDays,
-    subDays,
-    startOfMonth,
-    endOfMonth,
-    startOfWeek,
-    endOfWeek,
     eachDayOfInterval,
+    endOfMonth,
+    endOfWeek,
+    format,
     isSameDay,
     isSameMonth,
-    format
+    startOfMonth,
+    startOfWeek,
+    subDays
 } from "date-fns";
 import Day, {Dot} from "./Day/Day";
 import Left from "../img/chevron-left.svg";
@@ -31,8 +31,11 @@ export default function Calendar(props: {
         setDisplayingDate(props.date);
     }, [props.date]);
 
+    const className = props.className === undefined ? "theme--light" :
+        (!props.className.includes("theme--light") && !props.className.includes("theme--dark")) ? props.className + " theme--light" :
+            props.className;
     return (
-        <div className={"calendar " + props.className || ""} style={props.style}>
+        <div className={"calendar " + className} style={props.style}>
             <div className="calendar-header">
                 <button onClick={() => setDisplayingDate(subDays(startOfMonth(displayingDate), 1))}>
                     <Left/>
