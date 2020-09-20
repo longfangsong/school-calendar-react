@@ -1,7 +1,7 @@
 {
   "name": "school-calendar-react",
   "repository": "https://github.com/longfangsong/school-calendar-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/bundle.js",
   "types": "dist/src/Calendar.d.ts",
   "license": "Unlicense",
