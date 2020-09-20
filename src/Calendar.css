@@ -7,7 +7,7 @@
     user-select: none;
 }
 
-.theme--light.calendar, .theme--light .calendar {
+.calendar, .theme--light.calendar, .theme--light .calendar {
     background: white;
     color: rgba(0, 0, 0, .87);
 }
@@ -45,7 +45,7 @@
     position: relative;
 }
 
-.theme--light .calendar-header button {
+.calendar-header button, .theme--light .calendar-header button {
     background: white;
     fill: rgba(0, 0, 0, .87);
 }
@@ -75,7 +75,7 @@
     background-image: radial-gradient(circle, #ffffff 10%, rgba(0, 0, 0, 0) 10.01%);
 }
 
-.theme--light .calendar-header button:after {
+.calendar-header button:after, .theme--light .calendar-header button:after {
     background-image: radial-gradient(circle, #000000 10%, rgba(255, 255, 255, 0) 10.01%);
 }
 

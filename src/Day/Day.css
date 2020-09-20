@@ -27,7 +27,7 @@
     background: #515151;
 }
 
-.theme--light .day:hover {
+.day:hover, .theme--light .day:hover {
     background: #e0e0e0;
 }
 
