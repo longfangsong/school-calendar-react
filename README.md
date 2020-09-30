@@ -1,4 +1,6 @@
 # school-calendar-react
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flongfangsong%2Fschool-calendar-react.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flongfangsong%2Fschool-calendar-react?ref=badge_shield)
+
 A pretty calender for react
 
 This is the React version of the calendar component in [SHUHelper](https://github.com/shuosc/shuhelper-frontend)
@@ -36,3 +38,6 @@ Clone this repo and run
 yarn && yarn dev
 ```
 for a demo.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flongfangsong%2Fschool-calendar-react.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flongfangsong%2Fschool-calendar-react?ref=badge_large)
